@@ -1,7 +1,7 @@
 package org.recurrencerelation.service.impl;
 
 
-import javafx.util.Pair;
+import org.apache.commons.lang3.tuple.Pair;
 import org.recurrencerelation.configuration.ConstantMessageStatus;
 import org.recurrencerelation.service.CommandLineCalculator;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,7 +24,7 @@ public class CommandLineCalculatorImpl implements CommandLineCalculator {
         for (int i = 1; i <= Integer.parseInt(count); i++) {
             sum += (i + 3) - (i + 2);
         }
-        return new Pair<>(sum %= Integer.parseInt(divider), ConstantMessageStatus.SUCCESS);
+        return Pair.of(sum %= Integer.parseInt(divider), ConstantMessageStatus.SUCCESS);
     }
 
     private void validate() {

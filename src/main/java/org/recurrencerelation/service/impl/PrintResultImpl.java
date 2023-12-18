@@ -1,6 +1,6 @@
 package org.recurrencerelation.service.impl;
 
-import javafx.util.Pair;
+import org.apache.commons.lang3.tuple.Pair;
 import org.recurrencerelation.configuration.ConstantMessageStatus;
 import org.recurrencerelation.service.PrintResult;
 import org.springframework.stereotype.Component;
