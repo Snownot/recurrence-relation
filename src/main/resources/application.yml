@@ -1,0 +1,3 @@
+spring:
+  count: 1das000
+  divider: 10000
